@@ -3,12 +3,15 @@ h1{
 }
 h2{
     font-family: Georgia, 'Times New Roman', Times, serif; 
-    color: blue;
+    color: rgb(34, 34, 208);
 }
 h3{
     font-family: Arial, Helvetica, sans-serif;
-    color: lightslategray;
+    color: rgb(32, 114, 196);
 table{
     color:darkgreen;
 }
 
+h4{
+    color: crimson;
+}
