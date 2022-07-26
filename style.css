@@ -1,10 +1,15 @@
 h1{
-    font-size: 2rem;
+    font-size:xx-large;
 }
 h2{
     font-family: Georgia, 'Times New Roman', Times, serif; 
-    color: blue;
+    color: rgb(26, 26, 193);
 }
 h3{
+    font-family: Arial, Helvetica, sans-serif;
     color: rgb(39, 70, 58);
 }
+table{
+    color: blueviolet;
+}
+
