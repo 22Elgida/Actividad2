@@ -23,3 +23,8 @@ h5{
     font-size: 28px;
     color: red;
 }
+
+thead{
+    background-color: bisque;
+}
+
