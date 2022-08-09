@@ -10,6 +10,8 @@ function Iniciar(){
     $varBotonG=$('#btnguardar');
    $varBotonG.on('click', Guardar);
    $varBotonG.hide();
+   $varBotonA=$('#btnagrega');
+   $varBotonA.on('click', Agregar);
     
 }
 
@@ -17,7 +19,6 @@ function Presionar(){
     alert("Presionaste el boton Agregar");
     $varTabla=$('#tabla');
     $varTabla.hide();
-    $varBotonL.hide();
     $varBotonG.show();
     $varFormulario=$('#Formulario');
     $varFormulario.append('<input type="text" name="D" placeholder="NOMBRE">')
@@ -31,6 +32,8 @@ function Presionar(){
 function Listar(){
     alert("Presionaste el boton Listar");
     $varListar=$('#Listar');
+    $varFormulario.hide();
+    $varTabla.show();
 }
 
 function Guardar(){
@@ -38,4 +41,18 @@ function Guardar(){
     $varBotonG=$('#Guardar');
     $varFormulario.hide();
     $varTabla.show();
+}
+
+function Agregar(){
+    alert("Presionaste el boton Agregar");
+    $varTabla=$('#tabla');
+    $varTabla.hide();
+    $varBotonG.show();
+    $varFormulario=$('#For');
+    $varFormulario.append('<input type="text" name="D" placeholder="NOMBRE">')
+    $varFormulario.append('<input type="text" name="D" placeholder="APELLIDO">')
+    $varFormulario.append('<input type="text" name="D" placeholder="CODIGO">')
+    $varFormulario.append('<input type="text" name="D" placeholder="CURSOS">')
+    console.log("Formulario");
+    $varFormulario=$('#For'); 
 }
