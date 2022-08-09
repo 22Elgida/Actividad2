@@ -8,10 +8,13 @@ function Iniciar(){
     $varBotonL=$('#btnlistar');
     $varBotonL.on('click', Listar);
     $varBotonG=$('#btnguardar');
-   $varBotonG.on('click', Guardar);
-   $varBotonG.hide();
-   $varBotonA=$('#btnagrega');
-   $varBotonA.on('click', Agregar);
+    $varBotonG.on('click', Guardar);
+    $varBotonG.hide();
+    $varBotonA=$('#btnagrega');
+    $varBotonA.on('click', Agregar);
+    $varBotonP=$('#btnprom');
+    $varBotonP.on('click', Promedio);
+
     
 }
 
@@ -55,4 +58,12 @@ function Agregar(){
     $varFormulario.append('<input type="text" name="D" placeholder="CURSOS">')
     console.log("Formulario");
     $varFormulario=$('#For'); 
+}
+
+function Promedio(){
+    alert("APROBADOS 4");
+    alert("REPROBADOS 2");
+    $varBotonP=$('#prom');
+
+
 }
